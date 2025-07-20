@@ -35,15 +35,14 @@ Das Projekt macht **unsichtbare, soziale oder strukturelle Netzwerke** visuell u
 - 🌀 **Sketchfab-Integration für 3D-Modelle**  
   Blender-Modelle werden automatisch über die Sketchfab API geladen.
 
-- 📊 **Scroll-Fortschrittsanzeige**  
-  Eine Linie zeigt, wie weit der User auf der Seite gescrollt hat.
+
 
 ---
 
 ## 🧪 Anwendungsszenarien
 
 - Bildung: Visualisierung von Netzwerken, Beziehungen oder historischen Zusammenhängen
-- Kunst/Kultur: Darstellung sozialer oder politischer Strukturen
-- Datenjournalismus: Präsentation komplexer Sachverhalte visuell & interaktiv
+- Kunst/Kultur: Darstellung sozialer Strukturen
+
 
 ---
