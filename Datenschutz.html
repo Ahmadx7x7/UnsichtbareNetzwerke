@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datenschutzerklärung</title>
+    <style>
+        /* Allgemeine Stile */
+        body {
+            background-color: #ff5c4d;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 80px; /* Höhe der Navigationsleiste, anpassen nach Bedarf */
+        }
+
+        /* Navigationsleiste */
+        nav {
+            background-color: #ff5c4d;
+            color: #fff;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+            font-weight: 500;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+            transform: scale(1.1);
+            text-decoration: underline;
+        }
+
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        nav .menu {
+            display: flex;
+            gap: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            nav .menu {
+                flex-direction: column;
+                background-color: #ff5c4d;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                width: 200px;
+                padding: 1rem;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                display: none;
+            }
+
+        nav .menu.active {
+            display: flex;
+        }
+
+        nav .menu a {
+            margin: 10px 0;
+        }
+
+        nav .menu-toggle {
+            display: block;
+            cursor: pointer;
+        }
+    }
+
+        @media (min-width: 769px) {
+            nav .menu-toggle {
+                display: none;
+            }
+        }
+
+        /* Hauptcontainer */
+        #Datenschutz {
+            background-color: #f4f4f4;
+            border: 3px solid #000000;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 30px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+            width: 95%;
+            font-family: "Arial", sans-serif;
+            color: #333;
+        }
+
+        h1, h2, h5 {
+            color: #ff5c4d;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h2, h5 {
+            font-size: 1.8rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        a {
+            color: #ff5c4d;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+    background-color: #f44336;
+    color: white;
+    padding: 3rem 2rem;
+    text-align: center;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px 10px 0 0; /* Abgerundete obere Ecken */
+}
+
+footer p {
+    font-size: 1.2rem; /* Größere Schrift */
+    font-weight: 400;  /* Normales Gewicht */
+    line-height: 1.6;  /* Bessere Lesbarkeit */
+    margin: 0.5rem 0;
+}
+
+footer a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold; /* Fettgedruckte Links */
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Navigationsleiste -->
+    <nav>
+        
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <div class="menu">
+            <a href="SSC.html">Startseite</a>
+            <a href="#Kontakt">Kontakt</a>
+            <a href="#AllgemeineHinweise">Allgemeine Hinweise</a>
+        </div>
+    </nav>
+
+    <!-- Hauptinhalt -->
+    <div id="Datenschutz">
+        <!-- Kontakt -->
+        <section id="Kontakt">
+            <h2>1. Kontakt</h2>
+            <p>Für Fragen oder Bedenken zum Thema Datenschutz können Sie sich jederzeit an die verantwortliche Person für den Datenschutz an der Universität wenden:</p>
+            <address>
+                Datenschutzbeauftragter der Universität:<br>
+                Ruhr-Universität Bochum<br>
+                Dr. Kai-Uwe Loser<br>
+                Datenschutzbeauftragter<br>
+                Universitätsstraße 150<br>
+                44780 Bochum<br>
+                E-Mail: <a href="mailto:dsb@rub.de">dsb@rub.de</a><br>
+                Webseite: <a href="http://dsb.ruhr-uni-bochum.de/" target="_blank">https://dsb.ruhr-uni-bochum.de/</a>
+            </address>
+        </section>
+
+        <!-- Allgemeine Hinweise -->
+        
+        <section id="AllgemeineHinweise">
+            <h2>2. Allgemeine Hinweise und Pflichtinformationen</h2>
+            <p>Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Auf dieser Website werden keine personenbezogenen Daten gesammelt oder verarbeitet. Unsere Webseite kann ohne die Eingabe persönlicher Daten genutzt werden.</p>
+            <p>Weitere Informationen finden Sie in der <a href="https://www.ruhr-uni-bochum.de/de/datenschutzerklaerung" target="_blank">Datenschutzerklärung der Ruhr-Universität Bochum</a>.</p>
+        </section>
+        
+
+        <!-- Keine Erhebung personenbezogener Daten -->
+        <section>
+            <h2>3. Keine Erhebung personenbezogener Daten</h2>
+            <p>Wir erheben keine personenbezogenen Daten von den Nutzern unserer Website. Es werden keine Daten wie Name, E-Mail-Adresse oder andere Informationen, die eine Identifikation der Nutzer ermöglichen würden, gesammelt.</p>
+        </section>
+
+        <!-- Cookies -->
+        <section>
+            <h2>4. Cookies</h2>
+            <p>Unsere Website verwendet keine Cookies, die personenbezogene Daten sammeln oder Ihr Verhalten verfolgen.</p>
+        </section>
+
+        <!-- Datensicherheit -->
+        <section>
+            <h2>5. Datensicherheit</h2>
+            <p>Da wir keine persönlichen Daten verarbeiten, müssen wir keine speziellen Sicherheitsmaßnahmen zum Schutz personenbezogener Daten treffen. Wir setzen jedoch allgemeine technische und organisatorische Sicherheitsmaßnahmen ein, um unsere Website vor unbefugtem Zugriff oder Missbrauch zu schützen.</p>
+        </section>
+
+        <!-- Rechte der Nutzer -->
+        <section>
+            <h2>6. Rechte der Nutzer</h2>
+            <p>Da keine personenbezogenen Daten gesammelt werden, bestehen keine spezifischen Rechte auf Auskunft, Berichtigung oder Löschung personenbezogener Daten in Bezug auf unsere Website.</p>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Urheberrecht &copy; 2025 Unsichtbare Netzwerke. Alle Inhalte, Fotos, Texte und Grafiken dieser Website sind urheberrechtlich geschützt. Jede unautorisierte Vervielfältigung, Verbreitung oder Nutzung ist untersagt.</p>
+        
+    </footer>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+    }
+    </script>
+</body>
+</html>

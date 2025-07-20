@@ -1,0 +1,1353 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+
+/* scroll-line */
+.scroll-line {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    height: 6px;
+    background: linear-gradient(-45deg, #7e3514, #6e0e33, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    transition: width 0.3s ease-out;
+    z-index: 2000;
+}
+
+.scroll-line.sticky {
+    position: fixed; /* Make it stick to the screen when scrolling */
+    top: 0; /* Stick to the top of the viewport */
+    left: 0;
+    width: 100%;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Lato", sans-serif;
+    
+}
+
+body {
+    background-color: #ff5c4d;
+
+}
+
+.menu {
+    display: none;
+}
+
+/* Hintergrundbild */
+.bgimg {
+    background-repeat: no-repeat;
+    background-size: cover; /* Sorgt für die vollständige Abdeckung des Bereichs */
+    background-position: center; /* Zentriert das Bild */
+    background-image: url("fotos/ssc.jpg");
+    height: 100vh; /* Nimmt die gesamte Bildschirmhöhe ein */
+    -webkit-filter: brightness(100%) contrast(80%) saturate(96%);
+    filter: brightness(100%) contrast(80%) saturate(96%);
+    position: relative;
+}
+
+/* Text im Header */
+.w3-display-middle span {
+    font-size: 60px; /* Standardgröße für Desktop */
+    color: white;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Für mittlere Geräte (Tablets) */
+@media (max-width: 768px) {
+    .bgimg {
+        height: 80vh; /* Weniger Höhe für kleinere Geräte */
+        background-size: cover; /* Bild passt sich an */
+    }
+
+    .w3-display-middle span {
+        font-size: 40px; /* Textgröße reduzieren */
+    }
+}
+
+/* Für sehr kleine Geräte (z. B. Handys) */
+@media (max-width: 480px) {
+    .bgimg {
+        height: 70vh; /* Noch kleinere Höhe */
+        background-size: cover; /* Bild bleibt proportional */
+    }
+
+    .w3-display-middle span {
+        font-size: 30px; /* Textgröße weiter reduzieren */
+        padding: 10px; /* Etwas Abstand hinzufügen */
+    }
+}
+
+
+
+
+.w3-bar, h1  {
+    font-family: "Montserrat", sans-serif;
+    padding: 30px;
+    
+}
+
+/* Responsive Image Alignment für logo oben */
+.small-right {
+    width: 180px; 
+    float: right; 
+    margin: 5px;
+    filter: none; 
+    opacity: 1;   
+    height: 50px;
+    margin-left: 20px;
+    display: block;
+
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) { /* For tablets and smaller screens */
+.w3-bar, h1{
+    padding: 15px; 
+}
+
+.small-right {
+    width: 180px; 
+    height: 50px; 
+    float: none; 
+    display: block; 
+    margin: 0 auto 10px auto; 
+}
+
+}
+
+
+
+.rub-logo,
+.license-pic {
+    width: 100px; /* Same width for both images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+#footerMenu img {
+    text-align: center; /* Center align images */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Parent-div {
+    display: flex;
+    flex-direction: row; /* Aufteilung in zwei Spalten */
+    border: 5px #ff5c4d solid;
+    height: auto;
+    margin-bottom: 64px; /* Platz für Navbar */
+    gap: 20px; /* Abstand zwischen den Abschnitten */
+}
+
+.threed-model3d-section, .story-section {
+    flex: 3; /* Gleichmäßige Verteilung */
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+/* Überschrift h1 */
+.threed-model3d-section h1 {
+    color: #ff5c4d;
+    font-size: 2.8em; 
+    font-weight: bold; 
+    text-align: center; 
+    margin-bottom: 20px; 
+    letter-spacing: 1px; 
+}
+
+.threedMod{
+    border: 0;
+    height: 3px;
+    background: linear-gradient(to right, #ff5c4d, #0a0a0a); /* Farbabstufung */
+    margin: 20px auto;
+    width: 70%; /* Kürzer */
+
+}
+
+.threed-model3d-section lok2{
+    font-size: large;
+}
+
+.threed-model3d-section p{
+    font-size: 1.2rem; 
+    line-height: 1.8; 
+    color: #333; 
+    font-family: 'Roboto', Arial, sans-serif; 
+    text-align: justify; 
+    margin-bottom: 20px; 
+    padding: 10px 15px; 
+    background-color: #f9f9f9; 
+    border-left: 5px solid #ff5c4d; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.linie3DM{
+    border: 0;
+    height: 3px;
+    background: linear-gradient(to right, #ff5c4d, #0a0a0a); /* Farbabstufung */
+    margin: 20px auto;
+    margin-top: -45px; /* Verschiebt nach oben */
+    width: 70%; 
+}
+
+/* Überschrift h2 */
+.story-section h2 {
+    font-size: 2.2em; 
+    font-weight: 700;
+    text-align: center;
+    color: #ff5c4d;
+    margin-bottom: 20px;
+    text-transform: capitalize; 
+    padding-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.story-section h2 {
+    position: relative;
+    top: 30px; /* Verschiebt nur h2 und p.lok nach unten */
+}
+
+.story-section .lok {
+    font-size: 1.2rem; 
+    line-height: 1.8; 
+    color: #333; 
+    font-family: 'Roboto', Arial, sans-serif; 
+    text-align: justify; 
+    margin-bottom: 20px; 
+    padding: 10px 15px; 
+    background-color: #f9f9f9; 
+    border-left: 5px solid #ff5c4d; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+#sketchfab-viewer {
+    margin-top: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.sketchfab-embed-wrapper iframe {
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    max-height: 725px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Geschichten */
+.story-section {
+    flex: 1; /* Weniger Platz für die Geschichten */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.story-section h2 {
+    color: #ff5c4d; 
+    font-size: 2rem; 
+    text-align: center; 
+    margin-bottom: 15px; /* Etwas mehr Abstand */
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+    margin-bottom: 15px; 
+}
+
+
+
+.story-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 Spalten */
+    gap: 15px; /* Weniger Abstand zwischen den Karten */
+    margin-top: -10px; /* Hier kannst du den gewünschten Abstand einstellen */
+    margin-right:0px;
+}
+
+.story-card {
+    width: 365px;
+    height: 154px;
+    border-radius: 20px;
+    background: #ff5c4d;
+    position: relative;
+    padding: 1.8rem;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+}
+
+.card-details {
+    color: black;
+    height: 100%;
+    gap: .5em;
+    display: grid;
+    place-content: center;
+}
+
+.card-button {
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: none;
+    background-color: #3923ff;
+    color: #fff;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+}
+
+.text-body {
+    color: rgb(134, 134, 134);
+}
+
+/*Text*/
+.text-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+    margin: 1px;
+}
+
+/*Hover*/
+.story-card:hover {
+    border-color: #2948fc;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.story-card:hover .card-button {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.explanation-text {
+    font-size: 1.0rem; 
+    line-height: 1.4;  
+    margin-right: 10px; 
+}
+
+
+
+/* Für Tablets und kleinere Bildschirme */
+@media (max-width: 1024px) {
+    .Parent-div {
+        flex-direction: column; /* Stapelt die Bereiche übereinander */
+        gap: 20px;
+    }
+
+    .threed-model3d-section,
+    .story-section {
+        flex: 1; /* Beide Bereiche nehmen gleich viel Platz ein */
+        width: 100%; /* Bereich füllt die gesamte Breite */
+    }
+
+    .story-container {
+        grid-template-columns: repeat(1, 1fr); /* Nur 1 Spalte für die Geschichten */
+    }
+}
+
+/* Für Handys (sehr kleine Bildschirme) */
+@media (max-width: 600px) {
+    .Parent-div {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .threed-model3d-section,
+    .story-section {
+        padding: 10px; /* Weniger Padding für kleinere Bildschirme */
+        box-shadow: none; /* Optional: Schatten entfernen für Minimalismus */
+    }
+
+    h1, h2 {
+        font-size: 1.5em; /* Reduzierte Schriftgröße für Titel */
+    }
+
+    .story-container {
+        gap: 10px; /* Weniger Abstand zwischen den Geschichten */
+    }
+
+    .story-card {
+        width: 100%; /* Geschichten füllen die volle Breite */
+        height: auto; /* Flexible Höhe */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Hintergrund */
+.DIV-PART3 {
+    background-color: #f4f4f4; 
+    border: 3px solid #000000; /* Leichter Rahmen */
+    border-radius: 10px; /* Abgerundete Ecken */
+    padding: 30px; /* Mehr Innenabstand */
+    margin: 30px auto; /* Zentrierung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
+    max-width: 1200px; /* Begrenzte Breite */
+    width: 95%; 
+    font-family: "Arial", sans-serif; 
+    color: #333; 
+}
+
+/* Überschrift */
+.DIV-PART3 h3 {
+    color: #ff5c4d; 
+    font-size: 2rem; 
+    text-align: center; 
+    margin-bottom: 15px; 
+    letter-spacing: 1px; 
+}
+
+/* Trennlinie */
+.DIV-PART3 hr {
+    border: 0;
+    height: 3px;
+    background: linear-gradient(to right, #ff5c4d, #0a0a0a); /* Farbabstufung */
+    margin: 20px auto;
+    width: 70%; 
+}
+
+/* Allgemeine Abschnitte */
+.DIV-PART3 .block {
+    margin-bottom: 30px; 
+    padding: 20px; 
+    background-color: #ffffff; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); 
+}
+
+/* Block-Überschriften */
+.DIV-PART3 .block h4 {
+    color: #000000; 
+    font-size: 1.6rem; 
+    margin-bottom: 12px; 
+    border-left: 5px solid #ff5c4d; 
+    padding-left: 10px; 
+}
+
+/* Textabsätze */
+.DIV-PART3 .block p {
+    color: #2e2e2e; 
+    line-height: 1.8; 
+    font-size: 1.1rem; 
+    margin-bottom: 15px; 
+}
+
+/* Geordnete Listen */
+.DIV-PART3 .block ol {
+    list-style-type: decimal; 
+    margin-left: 25px; 
+    padding-left: 10px;
+}
+
+.DIV-PART3 .block ol li {
+    margin-bottom: 12px; 
+    line-height: 1.6; 
+    color: #000000; 
+}
+
+.DIV-PART3 .block ol li strong {
+    color: #222; 
+    font-size: 1.1rem; 
+}
+
+/* Links */
+.DIV-PART3 a {
+    color: #ff5c4d; 
+    text-decoration: none;
+    font-weight: bold; 
+}
+
+.DIV-PART3 a:hover {
+    text-decoration: underline; 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .DIV-PART3 {
+        padding: 15px;
+    }
+
+    .DIV-PART3 h3 {
+        font-size: 1.6rem; 
+    }
+
+    .DIV-PART3 .block h4 {
+        font-size: 1.3rem; 
+    }
+
+    .DIV-PART3 .block p {
+        font-size: 1rem; 
+    }
+
+    .DIV-PART3 .block ol {
+        margin-left: 15px; 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Kartenspiel */
+.DIV-PART4 {
+    max-width: 1800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 3px solid #000;  
+}
+
+
+.DIV-PART4 h1{
+    color: #ff5c4d; 
+    font-size: 2rem; 
+    text-align: center; 
+    margin-bottom: 15px; 
+    letter-spacing: 1px; 
+}
+
+.DIV-PART4 hr{
+    border: 0;
+    height: 3px;
+    background: linear-gradient(to right, #ff5c4d, #0a0a0a); /* Farbabstufung */
+    margin: 20px auto;
+    width: 70%; /* Kürzer */
+    margin-top: -30px;
+}
+
+.DIV-PART4 p {
+    font-size: 1.2rem; 
+    line-height: 1.8; 
+    color: #333; 
+    font-family: 'Roboto', Arial, sans-serif; 
+    text-align: justify; 
+    margin-bottom: 20px; 
+    padding: 10px 15px; 
+    background-color: #f9f9f9; 
+    border-left: 5px solid #ff5c4d; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* Allgemeines Layout für das Kartenspiel */
+.card-game {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Bildcontainer links in 2 Spalten */
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 25px;
+    flex: 1; 
+}
+
+/* Textcontainer rechts in 2 Spalten */
+.text-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 25px;
+    flex: 1; 
+}
+
+/* Drop-Zone */
+.drop-zone {
+    padding: 15px;
+    border: 2px dashed #bbb;
+    border-radius: 12px;
+    min-height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    font-size: 1rem;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.drop-zone.correct {
+    border-color: #28a745; 
+    background-color: #e6ffe6; 
+    box-shadow: 0 0 10px rgba(40, 167, 69, 0.5); 
+}
+
+.drop-zone.wrong {
+    border-color: #dc3545; 
+    background-color: #ffe6e6; 
+    box-shadow: 0 0 10px rgba(220, 53, 69, 0.5); /* Leuchtender Effekt */
+}
+
+
+
+/* Drop-Zone für Texte */
+.drop-zone {
+    padding: 15px;
+    border: 2px dashed #bbb;
+    border-radius: 12px;
+    min-height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    font-size: 1rem;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Draggable Items - Bilder */
+.draggable {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    cursor: grab;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+
+.draggable:hover {
+    transform: scale(1.1); /* Vergrößert sich beim Hovern */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Leichter Schatten */
+}
+
+.dragging {
+    opacity: 0.8;
+    transform: scale(1.2) rotate(5deg); /* Dreht und vergrößert das Element */
+    z-index: 1000;
+}
+
+/* Animationen */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/* Responsive Design für Bildschirme bis 1024px */
+@media (max-width: 1024px) {
+    .card-game {
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: space-between; 
+        gap: 30px;
+    }
+
+    .image-container {
+        display: flex;
+        flex-direction: column; 
+        gap: 30px;
+        width: 48%; 
+    }
+
+    .text-container {
+        display: flex;
+        flex-direction: column; 
+        gap: 25px;
+        width: 48%; 
+    }
+
+    .draggable {
+        width: 120px;  /* Kleinere Bilder */
+        height: 120px;
+    }
+
+    .DIV-PART4 p {
+        font-size: 1rem; /* Kleinere Schriftgröße für mittlere Bildschirme */
+    }
+}
+
+/* Noch kleinere Bildschirme (z. B. Tablets im Hochformat) */
+@media (max-width: 768px) {
+    .card-game {
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: space-between; 
+        gap: 40px;
+    }
+
+    .image-container {
+        width: 48%; 
+        width: 100%; /* Bilder nehmen den gesamten verfügbaren Platz ein */
+        gap: 40px; /* Abstand zwischen Bildern */
+    }
+
+    .text-container {
+        width: 48%; 
+        gap: 40px;
+    }
+
+    .draggable {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+/* Sehr kleine Bildschirme (z. B. Handys im Hochformat) */
+@media (max-width: 480px) {
+    .card-game {
+        display: flex; 
+        flex-direction: column; 
+        gap: 50px; 
+    }
+
+    .image-container {
+        width: 100%; /* Bilder nehmen den gesamten verfügbaren Platz ein */
+        margin-bottom: 15px; /* Abstand unter den Bildern */
+        gap: 50px;
+    }
+
+    .text-container {
+        width: 100%; /* Texte nehmen den gesamten verfügbaren Platz ein */
+    }
+
+    .draggable {
+        width: 160px; /* Sehr kleine Bilder */
+        height: 160px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* conceptboard */
+.DIV-PART5 {
+    max-width: 1800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 3px solid #000;  /* Schwarzer Rahmen hinzugefügt */
+}
+
+/* Styling für den Text im <p> Tag innerhalb des Conceptboard-Sections */
+.DIV-PART5 p {
+    font-size: 1.2rem; 
+    line-height: 1.8; 
+    color: #333;
+    font-family: 'Roboto', Arial, sans-serif; 
+    text-align: justify; 
+    margin-bottom: 20px; 
+    padding: 10px 15px; 
+    background-color: #f9f9f9; 
+    border-left: 5px solid #ff5c4d; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+
+.DIV-PART5 hr{
+    border: 0;
+    height: 3px;
+    background: linear-gradient(to right, #ff5c4d, #0a0a0a); /* Farbabstufung */
+    margin: 20px auto;
+    width: 70%; 
+}
+
+.h3C {
+    color: #ff5c4d; 
+    font-size: 2rem; 
+    text-align: center; 
+    margin-bottom: 15px; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+}
+
+/* Rahmen für das Conceptboard Bild-Container */
+.conceptboard-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    cursor: grab;
+    border: 2px solid #000;
+    border-radius: 8px; 
+}
+
+
+
+.conceptboard {
+    transition: transform 0.3s ease, transform-origin 0.3s ease;
+    width: 100%; 
+    transform-origin: center center; /* Standard Ursprungspunkt für den Zoom */
+}
+
+/* Wenn das Bild gezoomt ist und verschoben werden kann, ändern wir den Cursor */
+.conceptboard.dragging {
+    cursor: grabbing; /* Zeigt einen Hand-Cursor an, wenn das Bild gerade gezogen wird */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*schlussworte */
+#div6.analysis-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 3px solid #000;  /* Schwarzer Rahmen hinzugefügt */
+}
+
+
+
+#div6 h2 {
+    color: #ff5c4d; 
+    font-size: 2rem; 
+    text-align: center; 
+    margin-bottom: 15px; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+}
+
+#div6 h3{
+    color: #ff5c4d; 
+    font-size: 2rem;
+    text-align: center; 
+    margin-bottom: 15px; 
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+}
+
+/* Stil der horizontalen Linie */
+#div6 hr {
+    border: 0;
+    height: 3px;
+    background: linear-gradient(to right, #ff5c4d, #0a0a0a); /* Farbabstufung */
+    margin: 20px auto;
+    width: 70%; /* Kürzer */
+}
+
+/* Verbesserung der Absätze */
+#div6 p {
+    font-size: 1.1rem; 
+    color: #000000; 
+    line-height: 1.8; 
+    margin-bottom: 1.5rem;
+    font-family: 'Arial', sans-serif; 
+}
+
+/* Verbesserung der Liste */
+#div6 ul {
+    padding-left: 20px;
+    margin-bottom: 1.5rem;
+}
+
+#div6 li {
+    font-size: 1.1rem;
+    color: #000000;
+    margin-bottom: 0.5rem;
+}
+
+/* Verbesserung von starken Elementen */
+#div6 p strong {
+    font-size: 1.2rem;
+    color: #ff6f61; 
+}
+
+/* Überschrift für "Über uns" */
+#div6 h3 {
+    font-size: 1.6rem;
+    color: #ff6f61;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Listen konsistent gestalten */
+#div6 ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+    list-style-type: disc;
+    color: #000000;
+}
+
+#div6 li {
+    margin-bottom: 0.5rem;
+}
+
+
+/* Weitere Anpassungen für kleinere Bildschirme */
+@media (max-width: 600px) {
+    #div6 {
+        padding: 1rem;
+    }
+
+    #div6 h2, 
+    #div6 h3 {
+        font-size: 1.4rem; /* Kleinere Schriftgröße für kleinere Bildschirme */
+    }
+
+    #div6 p, 
+    #div6 ul li {
+        font-size: 1rem; /* Kleinere Schriftgröße für Paragraphen und Listen auf kleinen Geräten */
+    }
+}
+
+
+
+/* Maximale Breite auf 100% für div6 und div7, falls nötig */
+#div6, #div7 {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Schlussworte bilder */
+/* Schlussworte Bilder Container */
+.container-flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1800px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+/* Container für einzelne Divs */
+.analysis-container {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 1.5rem;
+    max-width: 48%; /* Maximalbreite auf 48% */
+    box-sizing: border-box;
+    margin: 20px 0;
+    border: 3px solid #000;  
+}
+
+.linieBilder{
+    border: 0;
+    height: 3px;
+    background: linear-gradient(to right, #ff5c4d, #0a0a0a); /* Farbabstufung */
+    margin: 20px auto;
+    width: 70%; 
+}
+
+/* Media Query für kleinere Bildschirme */
+@media (max-width: 768px) {
+    .container-flex {
+        flex-direction: column; /* Divs untereinander anordnen */
+    }
+
+    .analysis-container {
+        min-width: 100%; /* Volle Breite für jedes Div */
+    }
+
+    #div7 {
+        display: flex;
+        flex-direction: column;
+        width: 100%; 
+    }
+}
+
+/* Horizontale Linie */
+.section-divider {
+    border: none;
+    height: 2px;
+    background-color: #000000;
+    margin: 2rem 0;
+}
+
+/* Gestaltung der Bilder */
+.w3-half img {
+    width: 100%; 
+    margin-bottom: 10px;
+    margin-top: 16px;
+    opacity: 0.8;
+    cursor: pointer;
+    border-radius: 15px; 
+}
+
+.w3-half img:hover {
+    opacity: 1;
+}
+
+#div7 h2{
+    color: #ff5c4d;
+    font-size: 2rem; 
+    text-align: center; 
+    margin-bottom: 15px; 
+    text-transform: uppercase;
+    letter-spacing: 1px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* QUELLEN */
+#DIV-PART8 {
+    max-width: 1800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 3px solid #000;  
+}
+
+/* Styling for headers */
+#Quellen h3 {
+    color: #ff5c4d; 
+    font-size: 2rem; 
+    text-align: center; 
+    margin-bottom: 15px; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+}
+
+/* Styling for the horizontal rule */
+hr {
+    border: none;
+    height: 2px;
+    background-color: #000000;
+    margin: 1rem 0;
+}
+
+.linieQuellen{
+    border: 0;
+    height: 3px;
+    background: linear-gradient(to right, #ff5c4d, #0a0a0a); /* Farbabstufung */
+    margin: 20px auto;
+    width: 70%; 
+}
+
+/* Styling for paragraphs */
+#Quellen p {
+    margin: 1rem 0;
+    font-size: 1.0rem;
+    color: #000000;
+}
+
+/* Styling for strong elements */
+#Quellen p strong {
+    font-size: 1.1rem;
+    color: #000000;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* Add spacing and hover effect for links */
+#Quellen p a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+#Quellen p a:hover {
+    text-decoration: underline;
+}
+
+/* Transition effect for animations */
+[data-sr-id] {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+}
+
+/* Make content visible on page load */
+[data-sr-id].visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    #div9 {
+        padding: 1rem;
+    }
+
+    #Quellen h3 {
+        font-size: 1.5rem;
+    }
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* für navbar unten */
+.small-right {
+    height: 50px;
+    margin-left: auto;
+}
+
+@media (max-width: 768px) {
+    .small-right {
+        margin: 0 auto;
+        display: block;
+    }
+
+    #footerMenu {
+        margin-top: 10px;
+    }
+}
+
+
+
+
+
+
+/* Firefox (uncomment to work in Firefox, although other properties will not work!)  */
+/** {
+scrollbar-width: thin;
+scrollbar-color: #FF6F61 #DFE9EB;
+}*/
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+}
+
+  *::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #DFE9EB;
+    border: 3px solid #FF712A;
+}
+
+  *::-webkit-scrollbar-track:hover {
+    background-color: #B8C0C2;
+}
+
+  *::-webkit-scrollbar-track:active {
+    background-color: #B8C0C2;
+}
+
+
+  *::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: #FF6F61;
+}
+
+
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: #FF632B;
+}
+
+  *::-webkit-scrollbar-thumb:active {
+    background-color: #FF0A0A;
+}

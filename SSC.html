@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>UnsichtbareNetzwerke</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="SSC.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="icon1/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="icon1/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="icon1/favicon-16x16.png">
+        <link rel="manifest" href="icon1/site.webmanifest">
+        <script type="text/javascript" src="https://static.sketchfab.com/api/sketchfab-viewer-1.12.1.js"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-red w3-card w3-left-align w3-large ">
+
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i> Menü</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Entdecke</a>
+    <a href="#Storys1" onclick="w3_close()" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Räume</a>
+    <a href="#Hintergrund1" onclick="w3_close()" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Hintergrund</a>
+    <a href="#Kartenspiel1" onclick="w3_close()" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Machtspiel</a>
+    <a href="#Conceptboard1" onclick="w3_close()" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Entscheidungspraktiken</a>
+    <a href="#Schlussworte1" onclick="w3_close()" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Schlussworte</a>
+    <a href="#Quellen1" onclick="w3_close()" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Quellen</a>
+    <img src="fotos/Rub.jpeg" alt="RUB Logo" class="small-right">
+
+    <div class="scroll-line" style="width: 0%; position: absolute; bottom: 0; left: 0; height: 4px; background-color: #007bff;"></div>
+    </div>
+
+
+<!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-red w3-hide w3-hide-large w3-hide-medium w3-large">
+        <a href="#Storys1" class="w3-bar-item w3-button w3-padding-large">Räume</a>
+        <a href="#Hintergrund1" class="w3-bar-item w3-button w3-padding-large">Hintergrund</a>
+        <a href="#Kartenspiel1" class="w3-bar-item w3-button w3-padding-large">Machtspiel</a>
+        <a href="#Conceptboard1" class="w3-bar-item w3-button w3-padding-large">Entscheidungspraktiken</a>
+        <a href="#Schlussworte1" class="w3-bar-item w3-button w3-padding-large">Schlussworte</a>
+        <a href="#Quellen1" class="w3-bar-item w3-button w3-padding-large">Quellen</a>
+    </div>
+
+</div>
+
+
+
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="Startseite">
+    <div class="w3-display-bottomleft w3-padding"></div>
+    <div class="w3-display-middle w3-center">
+        <span class=" w3-hide-small" style="font-size:100px;color: rgb(255, 255, 255); text-shadow: 5px 5px 5px rgba(226, 17, 17, 0.9), 5px -5px 7px rgba(255, 105, 4, 0.91);">Unsichtbare<br>Netzwerke</span>
+        <span class=" w3-hide-large w3-hide-medium" style="font-size:60px; color: rgb(255, 255, 255); text-shadow: 5px 5px 5px rgba(251, 67, 67, 0.9), 5px -5px 7px rgba(255, 105, 4, 0.91);"><b>Unsichtbare<br>Netzwerke</b></span>
+    </div>
+</header>
+
+
+
+<div id="Storys1" style="position: relative; top: -120px;"></div>
+<div class="Parent-div">
+
+    <div class="threed-model3d-section">
+        <!--3D-MODEL-->
+        <h1 class="lok2">Treten Sie ein</h1>
+        <hr class="linie3DM">
+        <p>
+            Herzlich Willkommen! Entdecken Sie die Nachstellung der SSC Cafeteria an
+            unserem Campus auf interaktive Weise und bewegen Sie sich durch den Raum.
+            Hören Sie sich währenddessen die verschiedenen Geschichten an. 
+        </p>
+        <div id="sketchfab-viewer">
+            <div class="sketchfab-embed-wrapper">
+                <iframe id ="api-frame" allow="autoplay; fullscreen; xr-spatial-tracking" title="SSC" width="1101px" height="725" frameborder="0"   allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"
+                xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/e3343a0e5e3346c1bacc1b6a77bcab9e/embed"> 
+                </iframe> 
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+        
+        <!--Storys-->
+        <div class="story-section">
+            <h2>Räume</h2>
+            <hr class="threedMod">
+            <p class="lok">
+                            Verschiedene Räume in einer Cafeteria? Jede Geschichte zeigt, wie sich durch
+                            das Zusammenspiel von Menschen, Objekten und Technologie
+                            unterschiedliche sozio-materielle Räume in der Cafeteria konstituieren.
+                        </p>
+            <div class="story-container">
+
+                <!-- Story 1 -->
+                <div class="story-card">
+                    <div class="card-details">
+                        <p class="text-title">Die Wunder der Kopfhörer</p>
+                        <audio controls>
+                            <source src="Geschichten/wunder der kopfhörer.mp3" type="audio/mpeg">
+                        </audio>
+                        <p class="text-body"></p>
+                    </div>
+                    <button class="card-button" onclick="openModal('modal1')">Story lesen</button>
+                </div>
+
+                <!-- Modal -->
+                <div id="modal1" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('modal1')">&times;</span>
+                        <p>
+                            Sophie sitzt inmitten der Cafeteria. Die <b><em>Geräuschkulisse</em></b> ist lebhaft: Lachen, klirrende 
+                            Tassen, das lautes Summen der Kaffeemaschine. Doch all das erreicht sie nur gedämpft.
+                            Ihre Kopfhörer schirmen die Außenwelt ab, während sie sich konzentriert über ihren Laptop beugt.
+                            Sanfte musikalische Klänge füllen den Raum in ihrem Kopf, schaffen eine akustische Insel, 
+                            auf der sie ungestört arbeiten kann.
+                        </p>
+                        <p>
+                            Um sie herum verändert sich der Raum. Eine Gruppe weiter hinten lacht laut, ein Gespräch
+                            am Nebentisch wird hitziger. Die Cafeteria ist längst zum <b>Pausenraum</b> für anderer
+                            Leute geworden, doch für Sophie bleibt sie ein <b>Lernraum</b>, dank ihrer Kopfhörer.
+                            Ihre Kopfhörer sind dabei nicht nur ein Schutz gegen den Lärm, sondern auch ein Signal.
+                            Niemand spricht sie an, niemand stört sie. Sophie ist physisch präsent, sieht die anderen Menschen um
+                            sie herum beim Essen oder Arbeiten und doch ist sie in einer anderen Sphäre - eine klare
+                            Grenze, gezogen durch <b><em>die Technik auf ihren Ohren.</em></b>
+                        </p>
+                        <p>
+                            Nach Stunden nimmt sie die Kopfhörer ab. Plötzlich ist die Welt um sie herum wieder da,
+                            voller Stimmen und Geräusche. Die Cafeteria hat sich beruhigt, und Sophie packt ihre
+                            Sachen. Der <b>individuelle Raum</b>, den sie durch ihre Kopfhörer konstituiert hat, löst 
+                            sich auf und Sophie ist wieder präsent mit allen Sinnen.
+                        </p>
+                    </div>
+                </div>
+
+
+                <!-- Story 2 -->
+                <div class="story-card">
+                    <div class="card-details">
+                        <p class="text-title">Die Macht der Kaffeemaschine</p>
+                        <audio controls>
+                            <source src="Geschichten/kaffeemaschine.mp3" type="audio/mpeg">
+                        </audio>
+                        <p class="text-body"></p>
+                    </div>
+                    <button class="card-button" onclick="openModal('modal2')">Story lesen</button>
+                </div>
+
+                <!-- Modal -->
+                <div id="modal2" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('modal2')">&times;</span>
+                        <p>
+                            Ich bin die Kaffeemaschine. Glänzend, effizient und für viele hier unverzichtbar.
+                            Mein Platz ist fest an der Theke, genau im Herzen der Cafeteria. Ich weiß,
+                            wie wichtig ich bin - was wäre eine Cafeteria ohne mich? Der Tag vieler Menschen beginnt
+                            erst richtig, wenn sie ihren ersten Kaffee von mir bekommen haben.
+                        </p>
+                        <p>
+                            Bei mir haben die Kund:innen die Freiheit, selbst zu entscheiden.
+                            Sie schauen auf mein Menü, wählen aus und drücken den passenden Knopf.
+                            Effizient und unkompliziert - die Mitarbeiterinnen müssen so keinen Kaffee von Hand zubereiten.
+                            Doch hinter mir stehen sie immer bereit: aufmerksam, wachsam, präsent.
+                            <b><em>Ihre Blicke</em></b> gleiten über die Theke und ruhen auf den Kund:innen, die <b><em>sich bedienen</em></b>.
+                            Niemand würde es wagen, einfach einen Kaffee zu nehmen und wegzugehen - nicht hier, nicht unter diesen Blicken
+                        </p>
+                        <p>
+                            Heute Morgen läuft alles wie am Schnürchen. Eine Studentin tritt an die Theke,
+                            wählt einen Cappuccino und drückt meinen Knopf.
+                            Ich spüre, wie die Milch sich erwärmt, der Kaffee in die Tasse fließt und 
+                            der Duft sich ausbreitet. Die Studentin nimmt ihre Tasse,
+                            geht zur Kasse und bezahlt. Alles funktioniert reibungslos - so, wie es soll.
+                        </p>
+                        <p>
+                            Später merke ich, dass meine Milch zur Neige geht.
+                            Kein Grund zur Sorge - <b><em>ich setze die Mitarbeiterinnen in Bewegung</em></b> mit meinem Piepen,
+                            wie immer. Eine von ihnen kommt zu mir, öffnet mich, 
+                            füllt frische Milch ein und reinigt mich gründlich.
+                            Ich bin wieder einsatzbereit, die nächsten Kaffees zu servieren.
+                        </p>
+                        <p>
+                            Ich bin stolz auf meinen <b><em>festen Platz</em></b> in diesem Raum - ich werde nicht bewegt, aber die
+                            Menschen bewegen sich um mich herum. Ich bin mehr als nur eine Maschine. Ich bin Teil 
+                            eines <b>überwachten Raums </b>, das durch <b><em>die Ordnung</em></b> an der Theke und die Blicke der
+                            Mitarbeiterinnen zuverlässig funktioniert.
+                            Und in der Konstitution dieses überwachten Raumes bin ich ein <b><em>zentraler Aktant*</em></b>.
+                        </p>
+                    </div>
+                </div>
+
+
+                <!-- Story 3 -->
+                <div class="story-card">
+                    <div class="card-details">
+                        <p class="text-title">Unüberwindbares Hindernis</p>
+                        <audio controls>
+                            <source src="Geschichten/Hindernis.mp3" type="audio/mpeg">
+                        </audio>
+                        <p class="text-body"></p>
+                    </div>
+                    <button class="card-button" onclick="openModal('modal3')">Story lesen</button>
+                </div>
+
+                <!-- Modal -->
+                <div id="modal3" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('modal3')">&times;</span>
+                        <p>
+                            Es ist Annas erste Woche an der Uni, und sie hat <b><em>die Abläufe</em></b> in der Cafeteria noch nicht durchschaut.
+                            Nachdem sie ihr Portemonnaie verloren hat, bleibt ihr heute nur ein Zwanzigeuroschein -
+                            keine Karte, kein Studierendenausweis, nur Bargeld.
+                        </p>
+                        <p>
+                            Vor der Kühltheke entscheidet sie sich für eine kleine Schüssel Nudelsalat und 
+                            geht zur Kasse. Doch die Mitarbeiterin weist sie freundlich darauf hin: 
+                            „Wir nehmen hier nur bargeldlose Zahlungen.“ Verunsichert erklärt Anna ihre Situation -
+                            sie kannte diese Regel nicht. Die Mitarbeiterin schlägt vor,
+                            dass jemand für sie mitbezahlen könnte, doch die Studentin hinter ihr zuckt mit
+                            den Schultern: „Mein Guthaben reicht auch kaum.“ Anna weiß nicht, 
+                            sie sie auf die Blicke der Mitarbeiterin reagieren soll, und fühlt sich nervös.
+                        </p>
+                        <p>
+                            Anna steht ratlos da, während die anderen Besucher:innen in ihre Gespräche oder Laptops vertieft sind.
+                            <b><em>Die Blicke</em></b> im Raum verstärken ihr Unwohlsein. Schließlich muss sie die Schüssel 
+                            zurückstellen. Das bargeldlose <b><em>System</em></b> hat sie ausgeschlossen. 
+                            Mit knurrendem Magen verlässt sie die Cafeteria und denkt:
+                            „Hätte ich das gewusst.“ Morgen wird sie ihren neuen Studierendenausweis abholen - 
+                            doch für heute bleibt ihr nur die Suche nach einer Alternative außerhalb des Campus.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Story 4 -->
+                <div class="story-card">
+                    <div class="card-details">
+                        <p class="text-title">I got the power</p>
+                        <audio controls>
+                            <source src="Geschichten/Steckdose.mp3" type="audio/mpeg">
+                        </audio>
+                        <p class="text-body"></p>
+                    </div>
+                    <button class="card-button" onclick="openModal('modal4')">Story lesen</button>
+                </div>
+
+                <!-- Modal -->
+                <div id="modal4" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('modal4')">&times;</span>
+                        <p>
+                            Lara betritt die Cafeteria mit ihrem Laptop in der Hand.
+                            Ihr Akku ist fast leer und sie braucht eine Steckdose, um ihre Arbeit zu beenden.
+                            Doch es ist Mittagszeit, und die Cafeteria ist voll -
+                            jeder Platz in Steckdosennähe ist bereits belegt.
+                        </p>
+                        <p>
+                            Ihr <b><em>Blick</em></b> wandert durch den Raum, zielgerichtet auf der Suche nach einem
+                            <b>privilegierten Platz</b> mit Zugang zu Strom. Die Steckdosen schaffen 
+                            eine <b><em>unsichtbare Hierarchie</em></b>: Sie strukturieren den Raum und machen die Sitzplätze
+                            in ihrer Nähe zu begehrten Territorien. In einer Ecke entdeckt Lara jemanden mit
+                            einem zugeklappten Laptop. Vielleicht wird dieser Platz bald frei? Sie entscheidet
+                            sich, einen Platz ohne Steckdose in der Nähe zu wählen, bleibt aber aufmerksam.
+                            Ihre Augen kehren immer wieder zur Steckdose zurück - ein stiller <b><em>Kontrollblick</em></b>,
+                            der die <b><em>Überwachungszone</em></b> markiert.
+                        </p>
+                        <p>
+                            Tatsächlich steht die Person nach ein paar Minuten auf. Doch bevor Lara reagieren kann,
+                            bemerkt sie eine andere Studentin, die ebenfalls suchend durch den Raum streift.
+                            Lara zögert kurz, dann deutet sie der anderen Studentin großzügig auf den Platz.
+                            Dann überrascht Lara eine Stimme von der anderen Tischseite: „Brauchst du eine Steckdose?
+                            Mein Akku ist fast voll, wir können sie uns teilen.“ Die Tischnachbarin, 
+                            selbst an einem privilegierten Platz, zeigt Kooperationsbereitschaft.
+                            Lara nimmt das Angebot dankbar an. Während ihr Laptop lädt, entsteht ein Gespräch -
+                            aus einem umkämpften Territorium wird ein <b>geteilter Raum</b>. 
+                            Lara schafft es, ihre Präsentation fertigzustellen und verlässt die Cafeteria
+                            nicht nur mit einem geladenen Laptop, sondern auch mit einem neuen <b><em>sozialen Kontakt</em></b>.
+                            Die Steckdose hat sich als <b><em>zentraler Aktant</em></b> in diesem Netzwerk erwiesen:
+                            Sie hat einen privilegierten Raum konstituiert und sowohl Hierarchien als 
+                            auch Möglichkeiten zur Kooperation geschaffen.
+                        </p>
+                    </div>
+                </div>
+
+
+                <!-- Story 5 -->
+                <div class="story-card">
+                    <div class="card-details">
+                        <p class="text-title">Hinter der Theke</p>
+                        <audio controls>
+                            <source src="Geschichten/hinter theke.mp3" type="audio/mpeg">
+                        </audio>
+                        <p class="text-body"></p>
+                    </div>
+                    <button class="card-button" onclick="openModal('modal5')">Story lesen</button>
+                </div>
+
+                <!-- Modal -->
+                <div id="modal5" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('modal5')">&times;</span>
+                        <p>
+                            Sonja und Ulrike beginnen ihren Tag hinter der Theke.
+                            Sie öffnen die Rollläden, überprüfen die Kaffeemaschine und organisieren
+                            die Produkte in den Regalen - die Cafeteria erwacht unter ihrer <b><em>Kontrolle</em></b>. 
+                            Ihre Blicke gleiten durch den Raum, überwachen Kund:innen,
+                            die Relevo-Behälter scannen oder Produkte aus der Kühltheke nehmen. 
+                            Die <b><em>gläsernen Vitrinen</em></b> verstärken ihre <b><em>Handlungsmacht</em></b>, indem sie Transparenz 
+                            schaffen und den Bereich vor der Theke sichtbar machen.
+                        </p>
+                        <p>
+                            Kurz nach der Öffnungszeit blinkt die Kaffeemaschine rot. Sonja reagiert ruhig,
+                            reinigt die Maschine und stellt ihre Funktionsfähigkeit wieder her.
+                            Währenddessen übernimmt Ulrike die <b><em>Kontrolle</em></b> über den Kund:innenfluss:
+                            „Bitte nehmen Sie kurz Platz, wir kümmern uns darum. Gleich können Sie wieder 
+                            Kaffee kaufen.“ Ihre Handlungen <b><em>strukturieren den Raum</em></b> und
+                            regulieren das Verhalten der Kund:innen, die geduldig warten und 
+                            sich an die <b><em>unausgesprochenen Regeln</em></b> halten.
+                        </p>
+                        <p>
+                            Zur Mittagszeit steuern sie das hektische Treiben mit Präzision.
+                            Sie bedienen Kund:innen, kontrollieren Rückgaben und füllen die Vitrinen
+                            regelmäßig auf. Die Mitarbeiterinnen entscheiden, 
+                            welche Produkte wann nachgelegt werden und wie die <b><em>Abläufe</em></b> optimiert werden können.
+                            Durch ihre ständigen Kontrollblicke wird der Bereich vor der Theke zu einem Raum,
+                            in dem die Verhaltensweisen der Kund:innen sichtbar und <b><em>reguliert</em></b> werden.
+                            Niemand würde es wagen, Produkte zu entnehmen, ohne diese ordnungsgemäß zu bezahlen -
+                            die Blicke der Mitarbeiterinnen machen dies undenkbar.
+                        </p>
+                        <p>
+                            Am Nachmittag informieren Sonja und Ulrike die letzten Kund:innen über reduzierte Preise
+                            und sie geben manuell die Rabatte in die Kasse ein. Ohne ihre Eingaben wäre der Rabatt 
+                            und damit die Attraktivität der späten Einkäufe nicht möglich. Punkt 15 Uhr schließen 
+                            sie die Rollläden, reinigen die Geräte und verabschieden sich. Der Raum hinter der Theke
+                            ruht - bis sie am nächsten Tag ihre Tore wieder öffnen.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Story 6 -->
+                <div class="story-card">
+                    <div class="card-details">
+                        <p class="text-title">Der stille Raumgestalter</p>
+                        <audio controls>
+                            <source src="Geschichten/laptop.mp3" type="audio/mpeg">
+                        </audio>
+                        <p class="text-body"></p>
+                    </div>
+                    <button class="card-button" onclick="openModal('modal6')">Story lesen</button>
+                </div>
+
+                <!-- Modal -->
+                <div id="modal6" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('modal6')">&times;</span>
+                        <p>
+                            Ich bin der Laptop - klein, leicht und bereit, überall zum Einsatz zu kommen. 
+                            Mit mir wird jeder Ort, sei es die Cafeteria oder ein Tisch im Freien,
+                            zu deinem persönlichen Arbeitsraum. Sobald du mich auf den Tisch stellst, 
+                            <b><em>gehört dieser Platz dir</em> (individueller Raum)</b>. Mein Bildschirm und meine Tastatur 
+                            senden <b><em>ein klares Signal</em></b> an die anderen: „Hier passiert etwas Wichtiges.“
+                        </p>
+                        <p>
+                            Doch ich bin mehr als nur ein Arbeitswerkzeug. Ich arbeite Hand in Hand mit der Steckdose,
+                            die mich am Laufen hält, und den Kopfhörern, die dich vor dem Hintergrundrauschen schützen.
+                            Mit mir und meinen Verbündeten wird die Cafeteria zu einem hybriden Raum -
+                            ein <b>Lernort</b>, ein <b>Co-Working-Space</b>, ein Ort der Produktivität mitten im Alltag.
+                        </p>
+                        <p>
+                            Für dich bin ich ein treuer Begleiter. Ich nehme dir die Last von schweren Büchern und
+                            Notizblöcken ab, speichere deine Gedanken und Projekte sicher und kompakt.
+                            Aber ich habe auch meine Schwächen. Ohne Strom bin ich nur ein lebloser Kasten.
+                            Doch mit der richtigen Verbindung werde ich zu deinem wichtigsten Werkzeug - immer verfügbar, immer einsatzbereit.
+                        </p>
+                        <p>
+                            Heute sitze ich hier auf deinem Tisch, umgeben von dampfendem Kaffee und deinen Notizen.
+                            Gemeinsam schaffen wir nicht nur Arbeit, sondern auch eine Atmosphäre, die inspiriert,
+                            verbindet und diesen Raum neu definiert
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- Erklärungstext -->
+            <div class="explanation-text">
+                <p><strong>Hinweis:</strong> Die in den Geschichten verwendeten Namen sind frei erfunden und haben keinen Bezug zu realen Personen.</p>
+                <p><strong>Aktant:</strong> Die Verwendung des Begriffs „Aktant“ anstelle von „Akteur“ unterstreicht die Tatsache, dass Netzwerke sowohl aus nicht-menschlichen als auch aus menschlichen Elementen bestehen. Alle Aktanten werden durch das Akteur-Netzwerk, von dem sie Teil sind, hervorgebracht (d. h. sie erhalten ihre spezifischen Merkmale und Eigenschaften). (Järvinen, & Mik-Meyer, N, 2020, S.361)</p>
+
+                <p><strong>Erklärung zu den Schriftarten:</strong></p>
+                <ul>
+                    <li><em>Kursive Schrift:</em> Begriffe, die zentrale Aspekte unseres Forschungsprojekts und unserer Analyse beschreiben.</li>
+                    <li><strong>Große Schrift:</strong> Aus der Datenanalyse entwickelte Begriffe, die die „sozio-materiell konstituierten Räume“ darstellen.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="Hintergrund1" style="position: relative; top: -120px;"></div>
+    <!--Hintergrund-->
+    <div class="DIV-PART3">
+        <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+            <div class="Hintergrund">
+                <!-- Section 1: Background Header -->
+                <h3 class="display-3" id="delay">Hintergrund</h3>
+                <hr>
+
+                <!-- Section 2: Theoretical Background -->
+                <div class="block">
+                    <h4>Was steckt dahinter?</h4>
+                    <p>
+                        Unser Projekt basiert auf dem Konzept der Akteur-Netzwerk-Theorie (ANT). Die
+                        ANT wendet sich gegen die strikte Trennung zwischen Menschlichem und
+                        Nicht-Menschlichem. Stattdessen betrachtet sie alle Elemente Menschen,
+                        Objekte, Technologien - als Aktanten, die durch ihre wechselseitigen
+                        Beziehungen Netzwerke bilden. Mit dieser Perspektive werden die Grenzen
+                        zwischen Materialität und Sozialem aufgehoben und stattdessen die Dynamik
+                        von Netzwerken in den Fokus gerückt (Järvinen & Mik-Meyer 2020: 328).
+                    </p>
+                    <p>
+                        Im Zentrum unserer Untersuchung steht die Frage, wie der Raum der Cafeteria
+                        durch Netzwerke von Aktanten geformt und geprägt wird. Wir analysieren, wie
+                        Verbindungen zwischen diesen Aktanten geschaffen werden und wie daraus
+                        bestimmte Praktiken, Bedeutungen und Handlungsmöglichkeiten entstehen. Die
+                        ANT hilft uns, sichtbar zu machen, wie sich Handlungsmacht zwischen
+                        Menschen und materiellen Objekten verteilt, ohne dabei den Objekten eine
+                        passive Rolle zuzuschreiben.
+                    </p>
+                    <p>
+                        Durch diesen Zugang wird die Cafeteria als ein dynamischer Ort sichtbar, in
+                        dem sich verschiedene Räume durch das Zusammenspiel von Menschen und
+                        Dingen konstituieren und unterschiedliche Praktiken entfalten.
+                    </p>
+                </div>
+
+                <!-- Section 4: Methodology -->
+                <div class="block">
+                    <h4>So sind wir vorgegangen</h4>
+                    <ol>
+                        <li>
+                        <strong>Beobachtung der Praktiken und Aktanten</strong>
+                        <p>
+                            Wir haben die teilnehmende Beobachtung genutzt,
+                            um die Zirkulationen und Praktiken in der Cafeteria zu untersuchen und zentrale Aktanten wie Personal,
+                            Studierende, Tische, Kaffeemaschinen und Steckdosen zu identifizieren.
+                            Um unser Vorgehen methodisch fundiert zu gestalten, haben wir uns auf die Ethnographie nach Breidenstein et al.
+                            (2015) gestützt. Diese wurde in Kombination mit der ANT angewandt,
+                            die sowohl als theoretischer Rahmen als auch als methodischer Ansatz genutzt werden kann.
+                            Vor Ort haben wir beobachtet, wie Menschen mit materiellen Elementen interagieren und welche Routinen sie entwickeln, 
+                            z. B. bei der Sitzplatzwahl oder beim Umgang mit der Theke.
+                            Dadurch konnten wir die Cafeteria als dynamisches Netzwerk verstehen, in dem Praktiken und Beziehungen ständig neu verhandelt werden 
+                        </p>
+                        </li>
+                        
+                        <li>
+                        <strong> Dokumentation</strong>
+                        <p>
+                            Ergänzend haben wir die räumliche Anordnung sowie die Praktiken mithilfe von Notizen,
+                            Skizzen und Fotografien dokumentiert und diese systematisch in Notion zusammengeführt.
+                            Diese Dokumentation diente dazu, die Verbindungen zwischen den Aktanten präziser zu analysieren und eine Grundlage für die weitere theoretische Auseinandersetzung zu schaffen
+                        </p>
+                        </li>
+
+                        <li>
+                        <strong>Netzwerk-Mapping</strong> 
+                        <p>
+                            Basierend auf unseren Beobachtungen haben wir ein Netzwerk-Mapping erstellt, um die Interaktionen der verschiedenen Aktanten zu visualisieren.
+                            So konnten wir die Beziehungen im Raum übersichtlich darstellen.
+                            Im Rahmen der Mapping-Versuche strebten wir an, die aussagekräftigste Visualisierung zu entwickeln, indem wir verschiedene Ansätze und Darstellungsformen iterativ erprobten.
+                        </p>
+                        </li>
+
+                        <li>
+                        <strong>Gespräche vor Ort</strong>
+                        <p>
+                            Wir haben informelle Gespräche mit dem Personal und den Besucher:innen der Cafeteria geführt.
+                            Diese Gespräche gaben uns Einblicke in die Wahrnehmungen und Motivationen der Menschen hinter den beobachteten Praktiken.
+                            In den Gesprächen zielten wir darauf ab, Antworten auf unsere Fragen zu erhalten,
+                            die sich auf die Gründe für ihre Anwesenheit sowie auf die von ihnen aufgebauten Beziehungen zu den Materialien und 
+                            deren bedarfsgerechter Nutzung bezogen.
+                        </p>
+                        </li>
+
+
+                        <li>
+                        <strong>Datenanalyse</strong> 
+                        <p>
+                            Die erhobenen Daten - darunter Beobachtungsprotokolle, Notizen aus informellen Gesprächen und Fotografien -
+                            wurden systematisch analysiert, um die Dynamiken innerhalb der identifizierten Netzwerke zu erfassen. 
+                            Der Fokus der Analyse lag auf der Untersuchung der Rolle der verschiedenen Aktanten sowie auf der Wechselwirkung zwischen
+                            sozialen und materiellen Elementen, durch die der Raum gemeinschaftlich geformt wird.
+                        </p>
+                        <p>
+                            Im Rahmen der Auswertung wurden unterschiedliche Kodierungen entwickelt und unter spezifischen Überschriften strukturiert.
+                            Diese Kodierungen bildeten die Grundlage für die Ableitung von Kategorien,
+                            welche die Identifikation sozio-materiell konstituierter Räume ermöglichten.
+                        </p>
+                        <p>
+                            Für unsere Analyse haben wir verschiedene Fallstudien herangezogen, darunter Arbeiten von Laurier (2008),
+                            Ayaß (2020), Bernhardt (2023) sowie Laurier, Whyte und Buckner (2001),
+                            und diese als Grundlage für die angewandten Analysemethoden genutzt.
+                        </p>
+                        </li>
+
+                        <li>
+                        <strong>Datenvisualisierung</strong>
+                        <p>
+                            Für die Visualisierung unserer gesammelten Daten haben wir die passendsten Methoden recherchiert
+                            und eine dreidimensionale Darstellung entwickelt. Ziel war es, die Daten auf eine klare und detailreiche Weise zu präsentieren
+                            und dabei die wichtigsten Erkenntnisse durch Datengeschichten hervorzuheben.
+                            Zusätzlich haben wir ein interaktives Kartenspiel sowie ein Conceptboard gestaltet, 
+                            um den Besucher:innen die Objekte und Denkprozesse anschaulich zu vermitteln. 
+                        </p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+        <div id="Kartenspiel1" style="position: relative; top: -120px;"></div>
+        <!--Kartenspiel-->
+        <div class="DIV-PART4">
+            <h1>Machtspiel</h1>
+            <hr>
+            <div class="card-game">
+                <p>
+                    Im Kartenspiel können Sie die zentralen Objekte der Cafeteria erkunden:
+                    Welche Macht besitzt welches Objekt in der SSCCafeteria? Ordnen Sie die
+                    Bilder den passenden Beschreibungen zu. Erfahren Sie, welche Rolle jedes
+                    Objekt in den Praktiken und Abläufen des Raumes spielt.
+                </p>
+
+                <div class="image-container" id="image-container">
+                    <img src="fotos_spiel/steckdose.jpg" class="draggable" draggable="true" id="item1" alt="Steckdose">
+                    <img src="fotos_spiel/tisch.jpg" class="draggable" draggable="true" id="item2" alt="Tisch">
+                    <img src="fotos_spiel/becher.jpg" class="draggable" draggable="true" id="item3" alt="Becher">
+                    <img src="fotos_spiel/thekege.jpg" class="draggable" draggable="true" id="item4" alt="Theke">
+                    <img src="fotos_spiel/laptop.jpg" class="draggable" draggable="true" id="item5" alt="Laptop">
+                    <img src="fotos_spiel/kopfhörer.jpg" class="draggable" draggable="true" id="item6" alt="Kopfhörer">
+                    <img src="fotos_spiel/stuhl.jpg" class="draggable" draggable="true" id="item7" alt="Stuhl">
+                    <img src="fotos_spiel/stuhl2.jpg" class="draggable" draggable="true" id="item8" alt="Stuhl 2">
+                    <img src="fotos_spiel/thekeA.jpg" class="draggable" draggable="true" id="item9" alt="Theke A">
+                    <img src="fotos_spiel/karten.jpg" class="draggable" draggable="true" id="item10" alt="Karten">
+                    <img src="fotos_spiel/kaffeemaschine.jpg" class="draggable" draggable="true" id="item11" alt="Kaffeemaschine">
+                </div>
+
+                <div class="text-container"  id="text-container" >
+                    <div class="drop-zone" data-match="item1">Dank mir hast du ein Privileg im Raum. Dein Blick schweift durch die Cafeteria, immer auf der Suche nach mir - denn ohne mich bleibst du nicht lange. Bin ich in deiner Nähe, halte ich deinen Laptop am Leben, deine Arbeit im Fluss und deine Pläne am Laufen.</div>
+                    <div class="drop-zone" data-match="item2">Ich die Bühne für deine Pläne. Auf mir kannst du arbeiten, essen, trinken und deine Sachen ablegen. Rund um mich treffen sich Menschen, um zu sozialisieren und sich auszutauschen.</div>
+                    <div class="drop-zone" data-match="item3">Um mich nutzen zu können, brauchst du mehr als nur Appetit: Dein Handy, eine stabile Internetverbindung und ausreichend Speicherplatz sind meine Voraussetzungen. Ich bin nicht die schnellste Option, aber ich begleite dich nachhaltig durch den Alltag.</div>
+                    <div class="drop-zone" data-match="item4">Ich bin diejenige, die die Theke mit den Menschen verbindet und gleichzeitig trennt. Ich öffne den Zugang zu Speisen und Getränken, doch meine Funktion wird durch die Arbeitszeiten kontrolliert, die festlegen, wann ich aktiv werde. Solange ich geschlossen bin, halte ich alles im Raum sicher - ein stiller Wächter des Zugangs.</div>
+                    <div class="drop-zone" data-match="item5">Wenn du vor mir sitzt, siehst du beschäftigt aus - du kreierst deinen Arbeitsraum. Ich sorge dafür, dass du produktiv bleibst und dein Geschäft von überall ausführen kannst. Mit mir wird jeder Ort zu deinem Arbeitsbereich, solange sich die Umgebung darauf einstellt.</div>
+                    <div class="drop-zone" data-match="item6">Ich bin dein Schutzschild gegen das Chaos. Ich lasse dich in der lebhaften Cafeteria in deine eigene Welt abtauchen.</div>
+                    <div class="drop-zone" data-match="item7">Komm, lehn dich zurück. Ich bin weich, bequem und lade dich ein, die Schultern sinken zu lassen. Hier kannst du dich ausruhen, lesen oder in Gedanken versinken. Bei mir kann die Uni sich anfühlen wie dein Wohnzimmer.</div>
+                    <div class="drop-zone" data-match="item8">Ich lasse dich nicht stillsitzen. Dreh dich, wippe, fühl dich locker und flexibel mit mir! Nur für deinen Rücken bin ich unter Umständen eine Belastung.</div>
+                    <div class="drop-zone" data-match="item9">Ich bin die Linie, die trennt und verbindet. Ich schaffe Ordnung, strukturiere, wie du dich bewegst und zeige dir alles, was du willst. Durch mich wandern Blicke, Hände und Entscheidungen – doch hinter mir beginnt ein Raum, der nicht deiner ist.</div>
+                    <div class="drop-zone" data-match="item10">Ich bin dein Schlüssel zu allem, was du hier konsumieren kannst. Ohne mich bleibt der Kaffee und das Essen unerreichbar. Ein kurzes Auflegen und ich öffne den Weg für dich.</div>
+                    <div class="drop-zone" data-match="item11">Ein Knopfdruck, und ich erwache zum Leben. Flüssigkeit strömt durch meine Leitungen, ein warmer Duft breitet sich aus, und das, was ich ausspucke, wird von vielen hier sehnsüchtig erwartet. Doch egal, wie selbstständig ich scheine - die Blicke der Mitarbeiterinnen wachen über mich.</div>
+                </div>  
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div id="Conceptboard1" style="position: relative; top: -120px;"></div>
+            <!-- Conceptboard Section -->
+            <div class="DIV-PART5" >
+                <h3 class="h3C">Entscheidungspraktiken</h3>
+                <hr>
+                <p>
+                    In der Cafeteria entfalten sich viele Entscheidungspraktiken. Diese
+                    Visualisierung soll einen Einblick in die vielfältigen Entscheidungen geben, die
+                    hier getroffen werden. In diesem Beispiel gestalten die Entscheidungen sich um
+                    Materialität (Dreieck), individuelle Bedürfnisse (Viereck) und soziale Dynamiken
+                    (Kreis). Finden Sie sich in diesen Überlegungen wieder?
+                    Die dargestellten Entscheidungspraktiken beruhen auf den Daten, die wir aus
+                    informellen Gesprächen mit den Menschen in der Cafeteria sowie aus
+                    Beobachtungen gewonnen haben.
+                </p>
+                <!-- Conceptboard Image with Zoom functionality -->
+                <div class="conceptboard-container">
+                    <img class="conceptboard" src="Entscheidungspraktiken_page-0001.jpg" alt="Conceptboard" />
+                </div>
+            </div>
+        
+
+
+
+
+
+
+
+
+
+        <div id="Schlussworte1" style="position: relative; top: -120px;"></div>    
+        <div class="container-flex">
+            <!--schlussworte -->
+            <div id="div6" class="analysis-container">
+                <section id="schlusswort" class="section-closing">
+                    <h2>Schlussworte</h2>
+                    <hr>
+                    <p>
+                        Unsere Analyse der SSCCafeteria zeigt, dass Räume nicht statisch existieren,
+                        sondern durch das Zusammenspiel von Menschen, Objekten und Technologien
+                        ständig neu konstituiert werden. Es wird deutlich, wie eng soziale Dynamiken
+                        und materielle Gegebenheiten miteinander verflochten sind. Mit unserem
+                        Projekt haben wir sichtbar gemacht, wie materielle Elemente
+                        Handlungsmöglichkeiten eröffnen oder einschränken und so aktiv an der
+                        Gestaltung von Praktiken und sozialen Interaktionen beteiligt sind.
+                    </p>
+                </section>
+                
+                <section id="team" class="section-about">
+                    <h3>Über uns</h3>
+                    <hr>
+                    <p>
+                        Das Projekt <strong>Unsichtbare Netzwerke</strong> ist ein gemeinsames interdisziplinäres
+                        Forschungsprojekt von Studierenden der Sozialwissenschaften und der
+                        Angewandten Informatik.
+                    </p>
+                    <ul class="team-list">
+                        <li>Duygu Yüksel (SoWi)</li>
+                        <li>Karla Sofie Löhr (SoWi)</li>
+                        <li>Ahmad Mahmoud (AI)</li>
+                        <li>Walid Boudaka (AI)</li>
+                    </ul>
+                    <p>
+                        Das Projekt wurde im Rahmen des Forschungsseminars „Digitale Methoden und
+                        Kritische Datenforschung“ unter der Leitung von Prof. Dr. Estrid Sørensen und
+                        Mace Ojala im Sommersemester 2024 und Wintersemester 24/25 durchgeführt.
+                    </p>
+                </section>
+            </div>
+
+
+            <!--Sclussworte bilder  div7-->
+            <div id="div7" class="analysis-container">
+                <section id="section1" class="section-closing">
+                    <h2>Weitere Fotos</h2>
+                    <hr class="linieBilder">
+                    <div class="w3-row-padding">
+                        <div class="w3-half">
+                            <img src="fotos/IMG-20241121-WA0037.jpg" style="width:100%; margin-bottom: 10px;" onclick="onClick(this)" alt="Die Theke">
+                            <img src="fotos/IMG-20241121-WA0038.jpg" style="width:100%; margin-bottom: 10px;" onclick="onClick(this)" alt="Sitzbereich">
+                            <img src="fotos/IMG-20241121-WA0041.jpg" style="width:100%; margin-bottom: 10px;" onclick="onClick(this)" alt="SSC">
+                        </div>
+                    
+                        <div class="w3-half">
+                            <img src="fotos/IMG-20241121-WA0042.jpg" style="width:100%; margin-bottom: 10px;" onclick="onClick(this)" alt="PCs und Drucker">
+                            <img src="fotos/IMG-20241121-WA0052.jpg" style="width:100%; margin-bottom: 10px;" onclick="onClick(this)" alt="sitzbereich 2">
+                            <img src="fotos/IMG-20241217-WA0028.jpg" style="width:100%; margin-bottom: 10px;" onclick="onClick(this)" alt="Arbeitsbereich">
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+                <!-- Modal for full size images on click-->
+        <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+            <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                <img id="img01" class="w3-image">
+                <p id="caption"></p>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--Quellen -->
+        <div id="Quellen1" style="position: relative; top: -120px;"></div>   <!--for scrollen when press navbar-->
+        <div id="DIV-PART8">
+            <div id="Quellen">
+                <h3 id="display-4" id="delay">Quellen</h3>
+                </div>
+                <hr class="linieQuellen">
+                <div id="Quellen">
+                    <p style="line-height: 1.8;">
+                        <strong style="font-size: x-large;">Literaturverzeichnis</strong>
+                        <hr style="width: 215px; margin-top: -20px; margin-bottom: 10px;">
+                        <p style="font-size: large;">Hier findet ihr die Literatur, aus der auf unserer Website zitiert wird:</p>
+                        <br>Bernhardt, A. (2023). Coworking Atmospheres: On the Interplay of Curated Spaces and the View of Coworkers as Space-acting Subjects. Springer Nature.</br>
+                        <br>Breidenstein, Georg / Hirschauer, Stefan / Kalthoff, Herbert / Nieswand, Boris (2015): Ethnographie: Die Praxis der Feldforschung. 2. Aufl. Konstanz und München: UVK Verlagsgesellschaft mbH.</br>
+                        <br>Järvinen, Margaretha; Mik-Meyer, Nanna (2020): Qualitative Analysis. Eight Approaches for the Social Sciences. London: SAGE Publications.</br>
+                        <br>Laurier, E., Whyte, A. and Buckner, K. (2001): An ethnography of a neighbourhood café: informality, table arrangements and background noise. Journal of Mundane Behaviour, 2(2), pp. 195-232.</br>
+                        <br>Laurier, Eric (2008): How Breakfast Happens in the Café. In: Time & Society 17 (1), S. 119-134.</br>
+                    </p>
+                    
+                    <p>
+                        <strong style="font-size: x-large;">Literatursammlung</strong>
+                        <hr style="width: 200px; margin-top: -20px; margin-bottom: 10px;">
+                        <p style="font-size: large;line-height: 2;">Hier ist die Literatur aufgelistet, die uns bei unserem Projekt inspiriert hat und aus der wir theoretische Ansätze für unsere Forschung gewonnen haben: </p>
+                    </p>
+                    <p>
+                        • Árnadóttir ÁD, Kok G, Van Gils S, Ten Hoor GA (2019). Waste Separation in Cafeterias: A Study among University Students in the Netherlands. International Journal of Environmental Research and Public Health 16(1):93.
+                    </p>
+                
+                    <p>
+                        • Ayaß, Ruth (2020) Doing Waiting: An Ethnomethodological Analysis. In: Journal of Contemporary Ethnography 49 (4), S. 419-455.
+                    </p>
+                
+                    <p>
+                        • Bernhardt, A. (2023). Coworking Atmospheres: On the Interplay of Curated Spaces and the View of Coworkers as Space-acting Subjects. Springer Nature.
+                    </p>
+                
+                    <p>
+                        • Breidenstein, Georg / Hirschauer, Stefan / Kalthoff, Herbert / Nieswand, Boris (2015) Ethnographie: Die Praxis der Feldforschung. 2. Aufl. Konstanz und München: UVK Verlagsgesellschaft mbH.
+                    </p>
+                
+                    <p>
+                        • Burga, Ruben & Rezania, Davar. (2017). Project Accountability: an exploratory case study using actor-network theory. International Journal of Project Management. 35. 1024-1036.
+                    </p>
+                
+                    <p>
+                        • Fritz, T. (2023). Alternative Lernorte/-räume. In: Boeckmann, KB., Schweiger, H., Reitbrecht, S., Sorger, B. (eds) IDT 2022 *mit.sprache.teil.haben Band 1: Mit Sprache handeln. Erich Schmidt Verlag GmbH & Co. KG, Berlin.
+                    </p>
+                
+                    <p>
+                        • Kneer, G. (2008). Bruno Latours Kollektive Kontroversen zur Entgrenzung des Sozialen (Orig.-Ausg., 1. Aufl.). Suhrkamp
+                    </p>
+                
+                    <p>
+                        • Latour, Bruno; Woolgar, Steve (1986) Laboratory Life. The Construction of Scientific Facts. Princeton: Princeton University Press.
+                    </p>
+                
+                    <p>
+                        • Latour, B. (2012). The Berlin Key or How to do Words with Things 1. In Matter, materiality and modern culture (pp. 10-21). Routledge.
+                    </p>
+                
+                    <p>
+                        • Latour, B. (2010). Eine neue Soziologie für eine neue Gesellschaft Einführung in die Akteur-Netzwerk-Theorie (1. Auflage). Suhrkamp.
+                    </p>
+                
+                    <p>
+                        • Latour, B. (2008). Wir sind nie modern gewesen Versuch einer symmetrischen Anthropologie (1. Auflage). Suhrkamp.
+                    </p>
+                
+                    <p>
+                        • Laurier, E., Whyte, A. and Buckner, K. (2001) An ethnography of a neighbourhood café: informality, table arrangements and background noise. Journal of Mundane Behaviour, 2(2), pp. 195-232.
+                    </p>
+                
+                    <p>
+                        • Laurier, Eric & Philo, Chris. (2005). The Cappuccino Community: cafés and civic life in the contemporary city.
+                    </p>
+                    <p>
+                        • Laurier, Eric (2008): How Breakfast Happens in the Café. In: Time & Society 17 (1), S. 119-134.
+                    </p>
+                
+                    <p>
+                        • Lev Manovich (2001) The Language of New Media. In Classics in Media Theory (1st ed., S. 212-244). Routledge. <a href="https://doi.org/10.4324/9781003432272-29">https://doi.org/10.4324/9781003432272-29</a>
+                    </p>
+                
+                    <p>
+                        • Nussbaumer Knaflic, C., Kauschke, M., Verlag Franz Vahlen, & Verlag Franz Vahlen. (2017). Storytelling mit Daten die Grundlagen der effektiven Kommunikation und Visualisierung mit Daten. Verlag Franz Vahlen.
+                    </p>
+
+                    <p>
+                        • Schatzki, T.R. (2016). Materialität und soziales Leben.
+                    </p>
+                
+                    <p>
+                        • Schraube, Ernst & Sorensen, Estrid. (2013). Exploring Sociomaterial Mediations of Human Subjectivity. Subjectivity. 6. 1-11. 10.1057/sub.2012.30.
+                    </p>
+                
+                    <p>
+                        • Sørensen, Estrid (2018) Materialität, In: Kölbl, C. / Sieben, A. (Hrsg.), Stichwörter zur Kulturpsychologie, Gießen: Psychosozial-Verlag, S. 255-261.
+                    </p>
+                
+                    <p>
+                        • Meyer, Daniel; Reuter, Julia; Berli, Oliver (Hg.): 2022 Ethnografie der Hochschule. Bielefeld, Germany: transcript Verlag.
+                    </p>
+                
+                    <p>
+                        • Yau, N. (2014). Einstieg in die Visualisierung wie man aus Daten Informationen macht (1. Aufl.). Sybex.
+                    </p>
+                
+                    <p>
+                        • Watson, G. (2007). Actor network theory, after-ANT & enactment: implications for method. Retrieved May, 21, 2021.
+                    </p>
+                
+                    <p>
+                        • Wieser, Matthias (2006): Naturen, Artefakte und Performanzen - Praxistheorie und Akteur-Netzwerk-Theorie. In: Martin Voss und Birgit Peuker (Hg.): Verschwindet die Natur? transcript Verlag, S. 95-110.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+<!-- Navbar down -->
+<footer>
+    <div class="w3-container w3-center w3-red w3-padding-64">
+        <!-- Footer for large screens -->
+        <div class="w3-hide-small" style="display: flex; align-items: center; justify-content: center;">
+            <a href="Datenschutz.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Datenschutz</a>
+            <a href="https://www.ruhr-uni-bochum.de/de/impressum" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Impressum</a>
+            <img src="fotos/Rub.jpeg" alt="RUB Logo" class="small-right" style="margin-left: 20px; height: 50px;">
+            <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener noreferrer">
+            <img src="lizenzen.png" alt="Lizenz" style="max-width: 100%; height: auto;">
+        </div>
+
+        <!-- Footer for small screens -->
+        <div class="w3-hide-medium w3-hide-large">
+            <button class="w3-button w3-red w3-large" onclick="toggleFooterMenu(event)">
+                <i class="fa fa-bars"></i> Menü
+            </button>
+            <div id="footerMenu" class="w3-bar-block w3-hide" style="text-align: center;">
+                <a href="Datenschutz.html" class="w3-bar-item w3-button w3-padding-large">Datenschutz</a>
+                <a href="https://www.ruhr-uni-bochum.de/de/impressum" class="w3-bar-item w3-button w3-padding-large">Impressum</a>
+                <div style="margin-top: 10px;">
+                    <img src="fotos/Rub.jpeg" alt="RUB Logo" class="rub-logo" style="display: block; margin: 0 auto;">
+                    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener noreferrer">
+                        <img src="lizenzen.png" alt="Lizenz" class="license-pic" style="display: block; margin: 10px auto;">
+                    </a>
+                </div>
+            </div>
+        </div>
+</footer>
+
+
+<script src="SSC.js"></script>
+</body>
+</html>
